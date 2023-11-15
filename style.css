@@ -31,18 +31,18 @@ main {
   padding: 2em 2em 0 2em;
 }
 
-ul {
+.nav-list {
   list-style: none;
   padding: 1em;
   width: 100%;
 }
 
-li {
+.nav-item {
   margin-bottom: 0.5em;
   text-align: center;
 }
 
-li a {
+.nav-item a {
   padding: 1em;
   display:block;
   color: var(--black);
@@ -50,19 +50,20 @@ li a {
   padding: 1em;
 }
 
-a:hover {
+.nav-item a:hover {
   background-color: var(--blue);
   color: var(--white);
   border-radius: 1.5em;
 }
 
-article:nth-child(1) {
+.left-article {
   background-color: var(--grey);
   width: 25%;
 }
 
-article:nth-child(2) {
+.right-article {
   width: 100%;
+  padding: 1em;
 }
 
 h1 {
@@ -70,6 +71,6 @@ h1 {
   justify-content: center;
   align-items: center;
   font-size: 2.5em;
-  margin-top: 1em;
+  margin-top: 0.5em;
 }
 
