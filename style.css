@@ -58,6 +58,7 @@ a:hover {
 
 article:nth-child(1) {
   background-color: var(--grey);
+  width: 25%;
 }
 
 article:nth-child(2) {
