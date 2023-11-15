@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>bRAIN Beeldgebruik</title>
+    <link rel="stylesheet" href="beeldgebruik.css" />
+    <script src="beeldgebruik.js" defer></script>
+  </head>
+  <body>
+    <nav>
+      <ul id="menu">
+        <li><button id="menuKnop"><img src="assets/sidebar.svg"></button></li>
+        <li><a href="/"><img src="assets/globe.svg">Globals</a></li> <!--Maakt Tristan-->
+        <li><a href="/"><img src="assets/table.svg">Kleuren</a></li> <!--Maakt Mohammed-->
+        <li><a href="/"><img src="assets/type.svg">Typografie</a></li> <!--Maakt Yassir-->
+        <li><a href="/"><img src="assets/image.svg">Beeldgebruik</a></li><!--Maakt Rutger-->
+        <li><a href="/"><img src="assets/disc.svg">Knoppen & componenten</a></li> <!--vrijwillig melden-->
+      </ul>
+    </nav>
+
+    <main>
+        <div class="cards">
+            <div class="card">
+                <h2>Kleuren</h2>
+                <div class="lists">
+                    <h3>Groentinten</h3>
+                    <ul>
+                        <li>#4ECD5D</li>
+                        <li>#3FB64E</li>
+                        <li>#71DB7D</li>
+                        <li>#79BC80</li>
+                        <li>#79BC80</li>
+                    </ul>
+                    <h3>Grijstinten</h3>
+                    <ul>
+                        <li>#FFFFFF</li>
+                        <li>#D8D8D8</li>
+                        <li>#EFEFEF</li>
+                        <li>#333333</li>
+                    </ul>
+                    <h3>Blauwtinten</h3>
+                    <ul>
+                        <li>#3D5066</li>
+                        <li>#25364B</li>
+                        <li>#213247</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="card">
+                <h2>Logo</h2>
+                <h3>Details</h3>
+                <ul>
+                    <li>Kleur: #71B0C8</li>
+                    <li>Cursor: pointer</li>
+                    <li>PNG formaat</li>
+                </ul>
+                <img src="assets/logo_spatwater.png">
+            </div>     
+            <div class="card">
+                <h2>Figuren</h2>
+                <h3>Details</h3>
+                <ul>
+                    <li>Kleur opties uit: Groentinten, Grijstinten, Blauwtinten</li>
+                    <li>Cursor: pointer</li>
+                    <li>PNG formaat</li>
+                </ul>
+                <img src="assets/Untitled3.png">
+                <img src="assets/Untitled4.png">
+            </div>           
+            <div class="card">
+                <h2>Artikelen</h2>
+                <img src="assets/Screenshot 2023-11-15 at 14.20.05.png">
+                <pre><code>
+  @media screen and (min-width: 720px)
+  .portfolio__container {
+      grid-template-columns: repeat(2, 1fr);
+      gap: 1em;
+  }
+
+  .portfolio__img {
+      width: 100%;
+      height: auto;
+      display: block;
+      transition: .4s;
+      border-radius: 10px 10px 0 0;
+  }
+                    </code></pre>
+            </div>
+            <div class="card">
+                <h2>Teamfoto</h2>
+                <img src="assets/Screenshot 2023-11-15 at 14.33.59.png">
+                <pre><code>
+  @media screen and (min-width: 720px)
+  .team2__timo {
+      background-image: url(../img/Timo1_fullscreen.png);
+      background-size: 100%;
+      background-repeat: no-repeat;
+      border-radius: 10px;
+      width: 210px;
+      height: 260px;
+  }
+  .team2__timo:hover {
+    background-image: url("../img/Timo2_fullscreen.png");
+  }
+                                      </code></pre>
+            </div>
+
+      </div>
+    </main>
+  </body>
+</html>
