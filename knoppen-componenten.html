@@ -7,15 +7,26 @@
     <link rel="stylesheet" href="elements.css" />
   </head>
   <body>
+    <nav>
+        <ul id="menu">
+          <li><button id="menuKnop"><img src="assets/sidebar.svg"></button></li>
+          <li><a href="/"><img src="assets/globe.svg">Globals</a></li> <!--Maakt Tristan-->
+          <li><a href="/"><img src="assets/table.svg">Kleuren</a></li> <!--Maakt Mohammed-->
+          <li><a href="/"><img src="assets/type.svg">Typografie</a></li> <!--Maakt Yassir-->
+          <li><a href="/"><img src="assets/image.svg">Beeldgebruik</a></li><!--Maakt Rutger-->
+          <li><a href="/"><img src="assets/disc.svg">Knoppen & componenten</a></li> <!--vrijwillig melden-->
+        </ul>
+      </nav>
     <h1>Knoppen en componenten</h1>
     <main>
-      <h1>Knoppen met hover</h1>
+      
       <div class="cards">
-          <div class="card">
+        <h2>Knoppen met hover</h2>
+          <section class="card">
             <pre><code>
                 
                 a.button {
-                    background-color: 
+                    background-color: #4ecd5d
                     border-radius: 10px;
                     width: 210px;
                     height: 260px;
@@ -27,45 +38,113 @@
                 }
                 
                                                     </code></pre>  
+                                                    <img src="assets/contactknop.png" alt="contactknop">
               
-          </div>
-          <div class="card">
-              <h2>Logo</h2>
-              <h3>Details</h3>
-              <ul>
-                  <li>Kleur: #71B0C8</li>
-                  <li>Cursor: pointer</li>
-                  <li>PNG formaat</li>
-              </ul>
-              <img src="assets/logo_spatwater.png">
-          </div>     
-          <div class="card">
-              <h2>Figuren</h2>
-              <h3>Details</h3>
-              <ul>
-                  <li>Kleur opties uit: Groentinten, Grijstinten, Blauwtinten</li>
-                  <li>Cursor: pointer</li>
-                  <li>PNG formaat</li>
-              </ul>
-              <img src="assets/Untitled3.png">
-              <img src="assets/Untitled4.png">
-          </div>   
-          <div> 
-          <pre><code>
-            @media screen and (min-width: 720px)
-            .team2__timo {
-                background-image: url(../img/Timo1_fullscreen.png);
-                background-size: 100%;
-                background-repeat: no-repeat;
-                border-radius: 10px;
-                width: 210px;
-                height: 260px;
-            }
-            .team2__timo:hover {
-              background-image: url("../img/Timo2_fullscreen.png");
-            }
-                                                </code></pre>  
-                                            </div>     
+          </section>
+          <!-- <p>De code hierboven toont een rechthoekige knop aan die leidt naar bepaalde secties van de website. Er is een andere versie van deze knop die geheel vierkant is.</p> -->
+          <section class="card">
+              <h2>scroll button</h2>
+              <pre><code>
+                
+                a.button {
+                    background-color: #4ecd5d
+                    border-radius: 10px;
+                    width: 75px;
+                    height: 75px;
+                }
+
+                a.button:hover {
+                    background-color: #384b61;
+                    color: white;
+                }
+                
+       </code></pre>  
+        <img src="assets/scroll-top-knop.png" alt="scrollknop">
+
+          </section>     
+          <section class="card">
+              <h2>Accordion</h2>
+              <pre><code>
+                <button class="accordion">Section 1</button>
+                <section class="panel">
+                 <h3>
+                  <p>Lorem ipsum...</p>
+                </section>
+             <button class="accordion">Section 2</button>
+                <section class="panel">
+                   <p>Lorem ipsum...</p>
+                    </section>
+                                                             
+                 <button class="accordion">Section 3</button>
+                    <section class="panel">
+                       <p>Lorem ipsum...</p>
+                        </section>                                    
+                 </code></pre>
+                 <pre><code>
+                  
+.accordion {
+  background-color: #fafafa;
+  color: #44686f;
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  text-align: left;
+  border: none;
+  outline: none;
+  transition: 0.4s;
+}
+
+
+.active, .accordion:hover {
+  background-color: #ccc;
+}
+
+
+.panel {
+  padding: 0 18px;
+  background-color: white;
+  display: none;
+  overflow: hidden;
+}
+
+.accordion:after {
+    content: '&#11014'; 
+    font-size: 13px;
+    color: #777;
+    float: right;
+    margin-left: 5px;
+  }
+  
+  .active:after {
+    content: '&#11015'; 
+  }
+
+  var acc = document.getElementsByClassName("accordion");
+var i;
+
+for (i = 0; i < acc.length; i++) {
+  acc[i].addEventListener("click", function() {
+    /* Toggle between adding and removing the "active" class,
+    to highlight the button that controls the panel */
+    this.classList.toggle("active");
+
+    /* Toggle between hiding and showing the active panel */
+    var panel = this.nextElementSibling;
+    if (panel.style.display === "block") {
+      panel.style.display = "none";
+    } else {
+      panel.style.display = "block";
+    }
+  });
+}
+                 </code></pre>
+
+
+                 
+
+              <img src="assets/accordeon.png" alt="Accordion">
+            </section>   
+  
     </main>
   </body>
 </html>
