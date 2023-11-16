@@ -9,33 +9,25 @@
   <body>
     <h1>Knoppen en componenten</h1>
     <main>
-      <!-- <h1>Knoppen</h1> -->
+      <h1>Knoppen met hover</h1>
       <div class="cards">
           <div class="card">
-          
-              <div class="lists">
-                  <h3>Knoppen met effect</h3>
-                  <ul>
-                      <li>#4ECD5D</li>
-                      <li>#3FB64E</li>
-                      <li>#71DB7D</li>
-                      <li>#79BC80</li>
-                      <li>#79BC80</li>
-                  </ul>
-                  <h3>Grijstinten</h3>
-                  <ul>
-                      <li>#FFFFFF</li>
-                      <li>#D8D8D8</li>
-                      <li>#EFEFEF</li>
-                      <li>#333333</li>
-                  </ul>
-                  <h3>Blauwtinten</h3>
-                  <ul>
-                      <li>#3D5066</li>
-                      <li>#25364B</li>
-                      <li>#213247</li>
-                  </ul>
-              </div>
+            <pre><code>
+                
+                a.button {
+                    background-color: 
+                    border-radius: 10px;
+                    width: 210px;
+                    height: 260px;
+                }
+
+                a.button:hover {
+                    background-color: #384b61;
+                    color: white;
+                }
+                
+                                                    </code></pre>  
+              
           </div>
           <div class="card">
               <h2>Logo</h2>
@@ -57,7 +49,23 @@
               </ul>
               <img src="assets/Untitled3.png">
               <img src="assets/Untitled4.png">
-          </div>           
+          </div>   
+          <div> 
+          <pre><code>
+            @media screen and (min-width: 720px)
+            .team2__timo {
+                background-image: url(../img/Timo1_fullscreen.png);
+                background-size: 100%;
+                background-repeat: no-repeat;
+                border-radius: 10px;
+                width: 210px;
+                height: 260px;
+            }
+            .team2__timo:hover {
+              background-image: url("../img/Timo2_fullscreen.png");
+            }
+                                                </code></pre>  
+                                            </div>     
     </main>
   </body>
 </html>
