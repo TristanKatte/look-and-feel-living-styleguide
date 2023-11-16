@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SPATWater/b-RAIN | Living Style Guide</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <main>
+      <article class="left-article">
+        <section class="logo-box">
+          <img class="logo" src="../assets/logo_spatwater.png" alt="logo">
+        </section>
+        <nav>
+          <ul class="nav-list">
+            <li class="nav-item"><a href="../code/index.html" class="active">Globals</a></li> <!--Maakt Tristan-->
+            <li class="nav-item"><a href="../code/kleuren.html">Kleuren</a></li> <!--Maakt Mohammed-->
+            <li class="nav-item"><a href="../code/typografie.html">Typografie</a></li> <!--Maakt Yassir-->
+            <li class="nav-item"><a href="../code/beeldgebruik.html">Beeldgebruik</a></li><!--Maakt Rutger-->
+            <li class="nav-item"><a href="../code/knoppen-componenten.html">Knoppen & componenten</a></li> <!--vrijwillig melden-->
+          </ul>
+        </nav>
+      </article>
+
+      <article class="right-article">
+        <h1>Knoppen en componenten</h1>
+        <section>
+          <h2>Knoppen met hover</h2>
+          <pre><code>
+            a.button {
+                background-color: 
+                border-radius: 10px;
+                width: 210px;
+                height: 260px;
+            }
+
+            a.button:hover {
+                background-color: #384b61;
+                color: white;
+            }
+          </code></pre>
+
+          <h2>Logo</h2>
+          <ul class="style-list">
+            <li>Kleur: <span>#71B0C8</span></li>
+            <li>Cursor: <span>Pointer</span></li>
+            <li>Formaat: <span>PNG</span></li>
+          </ul>
+          <div class="img-box">
+            <img src="../assets/logo_spatwater.png">
+          </div>
+
+          <h2>Figuren</h2>
+          <ul class="style-list">
+            <li>Kleur opties: <span>Groentinten, Grijstinten, Blauwtinten</span></li>
+            <li>Cursor: <span>Pointer</span></li>
+            <li>Formaat: <span>PNG</span></li>
+          </ul>
+          <div class="img-box">
+            <img src="../assets/Untitled3.png">
+            <img src="../assets/Untitled4.png">
+          </div>
+          <pre><code>
+            @media screen and (min-width: 720px)
+            .team2__timo {
+                background-image: url(../img/Timo1_fullscreen.png);
+                background-size: 100%;
+                background-repeat: no-repeat;
+                border-radius: 10px;
+                width: 210px;
+                height: 260px;
+            }
+            .team2__timo:hover {
+              background-image: url("../img/Timo2_fullscreen.png");
+            }
+          </code></pre>
+        </section>
+      </article>
+    </main>
+  </body>
+</html>
