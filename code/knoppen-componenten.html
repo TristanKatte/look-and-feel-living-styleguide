@@ -42,40 +42,140 @@
             }
           </code></pre>
 
-          <h2>Logo</h2>
-          <ul class="style-list">
-            <li>Kleur: <span>#71B0C8</span></li>
-            <li>Cursor: <span>Pointer</span></li>
-            <li>Formaat: <span>PNG</span></li>
-          </ul>
+          <h2>scroll button</h2>
+          <pre><code>
+                a.scrllbutton {
+                    background-color: #4ecd5d
+                    border-radius: 10px;
+                    width: 75px;
+                    height: 75px;
+                }
+
+                a.scrllbutton:hover {
+                    background-color: #384b61;
+                    color: white;
+                }
+          </code></pre>
           <div class="img-box">
-            <img src="../assets/logo_spatwater.png">
+            <img src="../assets/scroll-top-knop.png" alt="scrollknop">
           </div>
 
-          <h2>Figuren</h2>
-          <ul class="style-list">
-            <li>Kleur opties: <span>Groentinten, Grijstinten, Blauwtinten</span></li>
-            <li>Cursor: <span>Pointer</span></li>
-            <li>Formaat: <span>PNG</span></li>
-          </ul>
-          <div class="img-box">
-            <img src="../assets/Untitled3.png">
-            <img src="../assets/Untitled4.png">
-          </div>
-          <pre><code>
-            @media screen and (min-width: 720px)
-            .team2__timo {
-                background-image: url(../img/Timo1_fullscreen.png);
-                background-size: 100%;
-                background-repeat: no-repeat;
-                border-radius: 10px;
-                width: 210px;
-                height: 260px;
+          <h2>underline link</h2>
+          <pre><code> 
+            a {
+                color: #44686f;
+                font-weight: light;
+                font-size: 1em;
             }
-            .team2__timo:hover {
-              background-image: url("../img/Timo2_fullscreen.png");
+
+            a:active {
+              text-decoration: underline;
+              border-bottom: 2px solid #4ecd5d;
+              font-weight: bold;
+              color: #44686f;
             }
           </code></pre>
+          <div class="img-box">
+            <img src="../assets/text-decoration-titels.png" alt="underline linkjes">
+          </div>
+
+          <h2>menu hover</h2>
+            <pre><code>
+              nav ul {
+                display: flex;
+                justify-content: center;
+                list-style-type: none;
+              }
+
+              nav {
+                background: white;
+                box-shadow: -1px 0 4px rgba(14, 55, 63, 0.15);
+                height: 80px;
+                width: 100%;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                font-size: 1.2rem;
+                position: fixed;
+                top: 0;
+                z-index: 999;
+              }
+
+              li a {
+                color: #7faec5;
+                font-size: 1.2em;
+                font-family: "Open Sans", sans-serif;
+              }
+
+              li a:hover {
+                color: #4ecd5d;
+              }
+          </code></pre>
+          <div class="img-box">
+            <img src="../assets/text-decoration-titels.png" alt="underline linkjes">
+          </div>
+
+          <h2>Accordion</h2>
+          <pre><code>
+            .accordion {
+              background-color: #fafafa;
+              color: #44686f;
+              cursor: pointer;
+              padding: 18px;
+              width: 100%;
+              text-align: left;
+              border: none;
+              outline: none;
+              transition: 0.4s;
+            }
+            
+            
+            .active, .accordion:hover {
+              background-color: #ccc;
+            }
+            
+            
+            .panel {
+              padding: 0 18px;
+              background-color: white;
+              display: none;
+              overflow: hidden;
+            }
+            
+            .accordion:after {
+                content: '&#11014'; 
+                font-size: 13px;
+                color: #777;
+                float: right;
+                margin-left: 5px;
+              }
+              
+              .active:after {
+                content: '&#11015'; 
+              }
+            
+              var acc = document.getElementsByClassName("accordion");
+            var i;
+            
+            for (i = 0; i < acc.length; i++) {
+              acc[i].addEventListener("click", function() {
+                /* Toggle between adding and removing the "active" class,
+                to highlight the button that controls the panel */
+                this.classList.toggle("active");
+            
+                /* Toggle between hiding and showing the active panel */
+                var panel = this.nextElementSibling;
+                if (panel.style.display === "block") {
+                  panel.style.display = "none";
+                } else {
+                  panel.style.display = "block";
+                }
+              });
+            }
+          </code></pre>
+          <div class="img-box">
+            <img src="../assets/accordeon.png" alt="Accordion">
+          </div>
         </section>
       </article>
     </main>
