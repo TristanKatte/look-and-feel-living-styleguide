@@ -23,6 +23,7 @@ html, body {
   width: 100%;
   font-family: Arial, Helvetica, sans-serif;
   color: var(--text-200);
+  line-height: 1.5;
 }
 
 main {
@@ -66,7 +67,8 @@ main {
 
 .nav-item {
   margin-bottom: 0.5em;
-  text-align: center;
+  text-align: left;
+  font-size: 1.2em;
 }
 
 .nav-item a {
