@@ -61,7 +61,6 @@ main {
 
 .nav-list {
   list-style: none;
-  padding: 1em;
   width: 100%;
 }
 
@@ -82,7 +81,6 @@ main {
 .nav-item a:hover {
   background-color: var(--primary-100);
   color: var(--primary-300);
-  border-radius: 1.5em;
 }
 
 h1 {
@@ -165,7 +163,6 @@ span {
   display: flex;
   flex-direction: row;
   justify-content: center;
-  align-items: center;
   list-style: none;
   background-color: var(--bg-200);
   padding: 1em;
@@ -173,41 +170,71 @@ span {
 }
 
 .color-item {
-  width: 5em;
-  height: 5em;
-  border-radius: 1em;
+  width: auto;
+  height: auto;
   margin: 1em;
   display: flex;
-  justify-content: center;
+  flex-direction: column;
   align-items: center;
 }
 
-.color-item:nth-child(1) {
+.color-circle {
+  border-radius: 50%;
+  padding: 2.5em;
+  background-color: var(--text-200);
+}
+
+.color-title {
+  font-weight: 600;
+}
+
+.color-1 {
   background-color: #7faec5;
-  color: var(--text-100);
 }
 
-.color-item:nth-child(2) {
+.color-2 {
   background-color: #fafafa;
-  color: var(--text-100);
 }
 
-.color-item:nth-child(3) {
+.color-3 {
   background-color: #4ecd5d;
-  color: var(--text-100);
 }
 
-.color-item:nth-child(4) {
+.color-4 {
   background-color: #384b61;
-  color: var(--bg-100);
 }
 
-.color-item:nth-child(5) {
+.color-5 {
   background-color: #919ea1;
-  color: var(--text-100);
 }
 
-.color-item:nth-child(6) {
+.color-6 {
   background-color: #44686f;
-  color: var(--bg-100);
+}
+
+.color-info {
+  list-style: none;
+  margin-top: 1em;
+}
+
+.info-item {
+  margin-bottom: 1em;
+}
+
+.example-list {
+  display: flex;
+  flex-direction: column;
+}
+
+.color-example {
+  background-color: var(--primary-100);
+  padding: 1em;
+  width: 30em;
+  height: 10em;
+  margin: 1em 0;
+}
+
+.color-example:nth-child(1) {
+  background-color: #fafafa;
+  color: #44686f;
 }
