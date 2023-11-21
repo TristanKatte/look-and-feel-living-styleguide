@@ -6,15 +6,19 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>SPATWater/b-RAIN | Living Style Guide</title>
     <link rel="stylesheet" href="style.css" />
+    <script src="script.js"></script>
   </head>
   <body>
     <main>
       <article class="left-article">
-        <section class="logo-box">
-          <img class="logo" src="../assets/logo_spatwater.png" alt="logo">
+        <section>
+          <div class="nav-top">
+            <img class="logo" src="../assets/logo_spatwater.png" alt="logo">
+            <button class="btn-toggle" onclick="ToggleNav()">X</button>
+          </div>
         </section>
         <nav>
-          <ul class="nav-list">
+          <ul class="nav-list" id="nav-list">
             <li class="nav-item"><a href="../code/index.html" class="active">Globals</a></li> <!--Maakt Tristan-->
             <li class="nav-item"><a href="../code/kleuren.html">Kleuren</a></li> <!--Maakt Mohammed-->
             <li class="nav-item"><a href="../code/typografie.html">Typografie</a></li> <!--Maakt Yassir-->
@@ -34,45 +38,44 @@
           <h2>Kleuren</h2>
           <ul class="color-box">
             <li class="color-item">
-                <div class="color-circle color-1"></div>
-                <p class="color-title">Blue</p>
-                <p>#7faec5</p>
+                <button class="btn-copy-circle color-1" onclick="copyToClipboard('color-code-1')"></button>
+                <p class="color-title">Glacier</p>
+                <p id="color-code-1">#7faec5</p>
                 <p>127, 174, 197</p>
                 <p>36%, 12%, 0%, 23%</p>
             </li>
             <li class="color-item">
-                <div class="color-circle color-2"></div>
-                <p class="color-title">White</p>
-                <p>#fafafa</p>
+              <button class="btn-copy-circle color-2" onclick="copyToClipboard('color-code-2')"></button>
+                <p class="color-title">Alabaster</p>
+                <p id="color-code-2">#fafafa</p>
                 <p>250, 250, 250</p>
                 <p>0%, 0%, 0%, 2%</p>
             </li>
             <li class="color-item">
-                <div class="color-circle color-3"></div>
-                <p class="color-title">Green</p>
-                <p>#4ecd5d</p>
-                <p>250, 250, 250</p>
-                <p>0%, 0%, 0%, 2%</p>
+              <button class="btn-copy-circle color-3" onclick="copyToClipboard('color-code-3')"></button>
+                <p class="color-title">Soft Green</p>
+                <p id="color-code-3">#4ecd5d</p>
+                <p>78, 205, 93</p>
+                <p>62%, 0%, 55%, 20%</p>
             </li>
             <li class="color-item">
-                <div class="color-circle color-4"></div>
-                <p class="color-title">Dark Blue</p>
-                <p class="color-title"></p>
-                <p>#384b61</p>
+              <button class="btn-copy-circle color-4" onclick="copyToClipboard('color-code-4')"></button>
+                <p class="color-title">River Bed</p>
+                <p id="color-code-4">#384b61</p>
                 <p>56, 75, 97</p>
                 <p>42%, 23%, 0%, 62%</p>
             </li>
             <li class="color-item">
-                <div class="color-circle color-5"></div>
-                <p class="color-title">Grey</p>
-                <p>#919ea1</p>
+              <button class="btn-copy-circle color-5" onclick="copyToClipboard('color-code-5')"></button>
+                <p class="color-title">Cool Grey</p>
+                <p id="color-code-5">#919ea1</p>
                 <p>145, 158, 161</p>
                 <p>10%, 2%, 0%, 37%</p>
             </li>
             <li class="color-item">
-                <div class="color-circle color-6"></div>
-                <p class="color-title">Grey Blue</p>
-                <p>#44686f</p>
+              <button class="btn-copy-circle color-6" onclick="copyToClipboard('color-code-6')"></button>
+                <p class="color-title">Blue Bayoux</p>
+                <p id="color-code-6">#44686f</p>
                 <p>68, 104, 111</p>
                 <p>39%, 6%, 0%, 56%</p>
             </li>
@@ -80,27 +83,27 @@
 
           <ul class="color-info">
             <li class="info-item">
-              <p class="color-title">Blue</p>
+              <p class="color-title">Glacier</p>
               <p>De kleur die wordt gebruikt voor headings van artikelen of tekst.</p>
             </li>
             <li class="info-item">
-              <p class="color-title">White</p>
+              <p class="color-title">Alabaster</p>
               <p>De meeste gebruikte steunkleur die vaak als achtergrond wordt toegepast om lagen en diepte te creëren.</p>
             </li>
             <li class="info-item">
-              <p class="color-title">Green</p>
+              <p class="color-title">Soft Green</p>
               <p>De kleur die wordt gebruikt voor achtergrond kleuren van knoppen.</p>
             </li>
             <li class="info-item">
-              <p class="color-title">Dark Blue</p>
+              <p class="color-title">River Bed</p>
               <p>De kleur die wordt gebruikt voor grote headings zoals h1.</p>
             </li>
             <li class="info-item">
-              <p class="color-title">Grey</p>
+              <p class="color-title">Cool Grey</p>
               <p>De kleur die wordt gebruikt voor de copyright tekst in de footer.</p>
             </li>
             <li class="info-item">
-              <p class="color-title">Grey Blue</p>
+              <p class="color-title">Blue Bayoux</p>
               <p>De kleur die wordt gebruikt voor alle tekst op de pagina.</p>
             </li>
           </ul>
@@ -108,74 +111,132 @@
 
           <section>
             <h2>Kleur Gebruik</h2>
+            <p>Voor de kleurgebruik is het alleen toegestaan om de Alabaster achtergrond kleur te gebruiken.</p>
+            <p class="allowed-badge">Toegestaan</p>
             <ul class="example-list">
-              <li class="color-example">
-                <h3>Voorbeeld</h3>
-                <p>Voorbeeld tekst.</p>
+              <li class="color-example example-box-1">
+                <h3>Titel</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam ornare sapien in magna pulvinar, at cursus tortor pretium.</p>
               </li>
-              <li class="color-example">
-                <h3>Voorbeeld</h3>
-                <p>Voorbeeld tekst.</p>
+              <li class="color-example example-box-2">
+                <h3>Titel</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam ornare sapien in magna pulvinar, at cursus tortor pretium.</p>
               </li>
-              <li class="color-example">
-                <h3>Voorbeeld</h3>
-                <p>Voorbeeld tekst.</p>
+            </ul>
+            <p class="not-allowed-badge">Niet Toegestaan</p>
+            <ul class="example-list">
+              <li class="color-example example-box-3">
+                <h3>Titel</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam ornare sapien in magna pulvinar, at cursus tortor pretium.</p>
               </li>
-              <li class="color-example">
-                <h3>Voorbeeld</h3>
-                <p>Voorbeeld tekst.</p>
+              <li class="color-example example-box-4">
+                <h3>Titel</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam ornare sapien in magna pulvinar, at cursus tortor pretium.</p>
               </li>
             </ul>
           </section>
 
-          <h2>Titels</h2>
-          <p>Er worden verschillende soorten kleuren gebruikt voor elke heading.</p>
-          <ul class="style-list">
-            <li>H1: <span>#384b61</span></li>
-            <li>H2: <span>#7faec5</span></li>
-            <li>H3: <span>#384b61 & #4ecd5d (margin-bottom)</span></li>
-            <li>Sub-title: <span>#7faec5</span></li>
-          </ul>
-          <p>In afbeeldingen met captions wordt de kleur van de H3 element: <span>#ffffff</span></p>
+          <section>
+            <h2>Kleur in visuals en illustraties</h2>
+            <p>In illustraties kun je de kleuren combineren</p>
+            <ul class="color-info">
+              <li class="info-item">
+                <p class="color-title">Alabaster</p>
+                <p>Deze kleur wordt vooral gebruikt voor de achtergrond kleur van de illustraties.</p>
+              </li>
+              <li class="info-item">
+                <p class="color-title">Blue Bayoux</p>
+                <p>Deze kleur wordt gebruikt om donkere elementen aan te duiden.</p>
+              </li>
+              <li class="info-item">
+                <p class="color-title">Soft Green</p>
+                <p>Deze kleur wordt gebruikt om lichtere elementen of natuur aan te duiden.</p>
+              </li>
+            </ul>
+            <div class="img-box">
+              <img src="../assets/Untitled3.png" alt="image-1">
+              <img src="../assets/Untitled4.png" alt="image-2">
+            </div>
+          </section>
 
-          <h2>Paragraphs</h2>
-          <ul class="style-list">
-            <li>P: <span>#44686f</span></li>
-          </ul>
+          <section>
+            <h2>Kleur in fotografie</h2>
+            <p>We hebben een aantal basisregels voor kleurgebruik in fotografie:</p>
+            <ul>
+              <li>Gebruik een accent in de kleuren van spatwater voor consistentie, herkenbaarheid en betekenis</li>
+              <li>Kies voor heldere, frisse kleuren</li>
+              <li>Vermijd filters</li>
+            </ul>
+            <ul class="photo-list">
+              <li class="photo-item">
+                <img src="../assets/projects1.png" alt="project-img-1">
+                <div class="photo-info">
+                  <p>Klimaatadaptatie</p>
+                  <h3>Gemeente Amstelveen</h3>
+                  <p>Gemeente Amstelveen heeft SPATwater gevraagd om op een innovatieve, 
+                    creatieve en inclusieve manier elke inwoner van Amstelveen een persoonlijk 
+                    en op maat gemaakt klimaatadaptief advies te geven.
+                  </p>
+                </div>
+              </li>
 
-          <h2>Buttons</h2>
-          <p>Normal state</p>
-          <pre><code>
-            button {
-              background: #4ecd5d;
-              color: #fff;
-            }
-          </code></pre>
-          <p>Active state</p>
-          <pre><code>
-            button:hover {
-              background: #384b61;
-            }
-          </code></pre>
+              <li class="photo-item">
+                <img src="../assets/projects4.png" alt="project-img-2">
+                <div class="photo-info">
+                  <p>Klimaatadaptatie</p>
+                  <h3>Gemeente Amsterdam</h3>
+                  <p>Begin 2022 introduceerde Waternet vanuit Amsterdam Rainproof de Rainproof Coaches. 
+                    In dit project is vanuit een wateroverlast knelpunt gekeken hoe de private ruimte 
+                    klimaatadaptief ingericht kan worden.
+                  </p>
+                </div>
+              </li>
 
-          <h2>Links</h2>
-          <p>Normal state</p>
-          <pre><code>
-            a {
-              color: #7faec5;
-            }
-          </code></pre>
+              <li class="photo-item">
+                <img src="../assets/verg.png" alt="project-img-3">
+                <div class="photo-info">
+                  <p>Klimaatadaptatie</p>
+                  <h3>Vergroenjewerk.nl</h3>
+                  <p>SPATwater heeft met hulp van studenten van de MSc MADE, Green Business Club, 
+                    Samen Klimaatbestendig, Waternet en de gemeente amsterdam de online tool vergroenjewerk.nl ontwikkeld. 
+                    De tool is bruikbaar voor elke werknemer die de werkomgeving wil vergroenen.
+                  </p>
+                </div>
+              </li>
+            </ul>
+          </section>
 
-          <p>Active state</p>
-          <pre><code>
-            a:hover {
-              color: #4ecd5d;
-            }
-          </code></pre>
-
-          <h2>Footer</h2>
-          <p>De p element krijgt de volgende kleur in de footer: <span>#919ea1</span></p>
-        </section>
+          <section>
+            <h2>Typografie Kleur</h2>
+            <p>Er zijn twee soorten heading stijlen die kunnen worden gebruikt.</p>
+            <ul class="heading-list">
+              <li class="heading-item">
+                <h2 class="heading-1">Heading</h2>
+                <p>Deze stijl wordt gebruikt voor titels van artikelen.</p>
+                <pre><code id="code-heading-1">
+                  .heading-1 {
+                    display: inline-block;
+                    color: var(--glacier);
+                    margin: 0.5em 0;
+                  }
+                </code>
+                <button class="btn-copy" onclick="copyToClipboard('code-heading-1')">C</button></pre>
+              </li>
+              <li class="heading-item">
+                <h2 class="heading-2">Heading</h2>
+                <p>Deze stijl wordt gebruikt voor titels die een vraag aanduiden.</p>
+                <pre><code id="code-heading-2">
+                  .heading-2 {
+                    display: inline-block;
+                    color: var(--river-bed);
+                    margin-bottom: 0.5em;
+                    border-bottom: 0.1em solid var(--soft-green);
+                  }
+                </code>
+                <button class="btn-copy" onclick="copyToClipboard('code-heading-2')">C</button></pre>
+              </li>
+            </ul>
+          </section>
       </article>
     </main>
   </body>
